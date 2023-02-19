@@ -15,7 +15,7 @@ const ProductAll = () => {
   return (
     <div>
       <ProductCard />
-      <div>수정 중</div>
+      <div></div>
     </div>
   );
 };
