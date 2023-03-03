@@ -52,3 +52,19 @@
 .search-icon {
   cursor: pointer;
 }
+
+.img-wrap {
+  width: 250px;
+  height: 400px;
+}
+
+.card-wrap {
+  width: 250px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.card-wrap img:hover {
+  width: 300px;
+  height: 450px;
+}
