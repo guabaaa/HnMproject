@@ -1,6 +1,7 @@
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiSearchAlt } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const menuList = [
@@ -13,10 +14,16 @@ const Navbar = () => {
     "Sale",
     "지속가능성",
   ];
+
+  const navigate = useNavigate();
+
+  const goToLogin = () => {
+    navigate("/login");
+  };
   return (
     <div>
       <div>
-        <div className="login-button">
+        <div className="login-button" onClick={goToLogin}>
           <AiOutlineUser />
           <div>로그인</div>
         </div>
