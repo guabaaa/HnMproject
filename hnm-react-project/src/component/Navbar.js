@@ -20,6 +20,12 @@ const Navbar = () => {
   const goToLogin = () => {
     navigate("/login");
   };
+
+  const search = (event) => {
+    if (event.key === "Enter") {
+      console.log("we click this key", event.key);
+    }
+  };
   return (
     <div>
       <div>
@@ -42,7 +48,11 @@ const Navbar = () => {
         </ul>
         <div className="nav-searchbar">
           <BiSearchAlt size={20} className="search-icon" />
-          <input type="text" placeholder="제품검색" />
+          <input
+            type="text"
+            placeholder="제품검색"
+            onKeyPress={(event) => search(event)}
+          />
         </div>
       </div>
     </div>
